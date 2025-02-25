@@ -1,0 +1,27 @@
+.profile-pic {
+    width: 600px;
+    height: auto;
+}
+
+section {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#about { background: #f4f4f4; }
+#skills { background: #ddd; }
+#learning { background: #bbb; }
+#contact { background: #999; }
