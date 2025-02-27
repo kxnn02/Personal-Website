@@ -1,3 +1,39 @@
+/* https://coolors.co/e63946-f1faee-a8dadc-1d3557 */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Style for "Kenneth Fernandez" */
+nav p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Links */
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Flex container for nav links */
+nav div {
+    display: flex;
+    gap: 20px;
+}
+
 .profile-pic {
     width: 600px;
     height: auto;
@@ -21,7 +57,8 @@ header {
     text-align: center;
 }
 
-#about { background: #f4f4f4; }
-#skills { background: #ddd; }
-#learning { background: #bbb; }
-#contact { background: #999; }
+#github-icon, #facebook-icon {
+    height: 200px;
+    width: 200px;
+}
+
