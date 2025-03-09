@@ -1,64 +1,226 @@
-/* https://coolors.co/e63946-f1faee-a8dadc-1d3557 */
+    /* https://coolors.co/e63946-f1faee-a8dadc-1d3557 */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-/* Style for "Kenneth Fernandez" */
-nav p {
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-}
 
-/* Navigation Links */
-nav a {
-    color: black;
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: bold;
-}
 
-/* Flex container for nav links */
-nav div {
-    display: flex;
-    gap: 20px;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-.profile-pic {
-    width: 600px;
-    height: auto;
-}
+    html {
+        scroll-behavior: smooth;
+    }
 
-section {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+    body {
+        background-color: black;
+        color: #F1FAEE;
+        font-family: "DM Sans", sans-serif;
+    }
 
-header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
-#github-icon, #facebook-icon {
-    height: 200px;
-    width: 200px;
-}
+    .profile-pic {
+        width: 600px;
+        height: auto;
+    }
 
+    section {
+        height: 100vh; /* Full viewport height */
+        color: #F1FAEE;
+        background-color: black;
+        padding: 50px 10%;
+
+    }
+
+
+    header {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: black;
+        color: #F1FAEE;
+    }
+
+    header h1 {
+        color: #F1FAEE;
+    }
+
+    .highlight {
+        color: #E63946;
+    }
+
+    #intro {
+        position: absolute; /* Keeps it in document flow */
+        top: 100vh; /* Places it right after the header */
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        font-family: "Inter", sans-serif;    
+    }
+
+    #intro p {
+        margin-right: 100px;
+        font-size: 18px;
+        max-width: 65ch;
+        word-wrap: break-word
+    }
+
+    #intro button {
+        font-size: 20px;
+        padding: 15px 30px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: none;
+        background-color: #E63946;
+        color: #F1FAEE;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #intro button a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #F1FAEE;
+        font-family: "DM Sans", sans-serif;
+    }
+
+    #intro button:hover {
+        background-color: #A8DADC;
+        transform: translateY(-3px);
+    }
+
+    #intro button:hover a {
+        color: #F1FAEE;
+    }
+
+
+    header h1 {
+        font-family: "DM Sans", sans-serif;
+        font-size: 4rem;
+    }
+
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 30px 10%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        border-bottom: 1px solid #2C2C2C;
+        font-family: "DM Sans", sans-serif;
+        background-color: black;
+        color: #F1FAEE; 
+    }
+
+    nav p {
+        margin-right: auto;
+    }
+
+    .nav_links {
+        list-style: none;
+    }
+
+    .nav_links li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .nav_links a {
+        text-decoration: none;
+        color: #F1FAEE;
+    }
+
+    .nav_links li a {
+        transition: all 0.3s ease 0s;
+    }
+
+    .nav_links li a:hover {
+        color: #A8DADC;
+    }
+
+
+    #about {
+        display: flex;
+        align-items: center; /* Centers content vertically with the right image */
+        justify-content: space-between;
+        margin-top: 200px;
+    }
+    
+
+    .about_left h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .about_left {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers the heading and images horizontally */
+        justify-content: center; /* Centers the heading and images vertically */
+        text-align: center;
+        height: 100%;
+        margin-right: 50px;
+    }
+
+    .about_right {
+        flex-shrink: 0; /* Prevents the static image from resizing */
+    }
+
+    .changing_images_container {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+    
+    .changing_images {
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .changing_images img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .changing_images img.active {
+        opacity: 1;
+        z-index: 1;
+    }
+    
+
+    .about_right img {
+        height: auto;
+        max-height: 500px; /* Adjust based on your actual image size */
+        display: block;
+    }
+
+    #skills {
+        padding-top: 150px;
+    }
+
+
+
+    footer {
+        background-color: #1D3557; /* Deep Blue */
+        color: #F1FAEE;
+        text-align: center;
+        padding: 20px 0;
+    }
