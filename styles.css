@@ -208,19 +208,280 @@
 
     .about_right img {
         height: auto;
-        max-height: 500px; /* Adjust based on your actual image size */
+        max-height: 500px; 
         display: block;
     }
 
-    #skills {
-        padding-top: 150px;
+    .about_continuation {
+        max-width: 800px; 
+        margin: 60px auto; 
+        padding: 40px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(10px); 
+        text-align: left;
     }
-
-
-
-    footer {
-        background-color: #1D3557; /* Deep Blue */
-        color: #F1FAEE;
+    
+    .about_continuation h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
         text-align: center;
-        padding: 20px 0;
     }
+    
+    .about_text p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #F1FAEE;
+        margin-bottom: 15px;
+    }
+
+        /* Skills Section */
+    #skills {
+        text-align: center;
+        padding: 80px 10%;
+        color: #fff;
+        background: #000; /* Dark background */
+    }
+
+    #skills h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    #skills p {
+        font-size: 1.2rem;
+        color: #A8A8A8;
+        margin-bottom: 40px;
+    }
+
+    /* Grid Layout */
+    .skills_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    /* Individual Skill Card */
+    .skill_card {
+        background: #111;
+        padding: 20px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: background 0.3s, transform 0.2s;
+        cursor: pointer;
+    }
+
+    .skill_card:hover {
+        background: #222;
+        transform: scale(1.02);
+    }
+
+    /* Skill Icon */
+    .skill_card img {
+        width: 40px;
+        height: 40px;
+    }   
+
+    /* Skill Text */
+    .skill_info h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .skill_info p {
+        font-size: 0.9rem;
+        color: #A8A8A8;
+        margin: 0;
+    }
+
+    /* Arrow Icon */
+    .arrow {
+        font-size: 1.2rem;
+        color: #777;
+        transition: color 0.3s;
+    }
+
+    .skill_card:hover .arrow {
+        color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .skills_grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+        /* ============ EDUCATION SECTION ============ */
+    #education {
+        text-align: center;
+        padding: 80px 10%;
+        color: #fff;
+        background: #000; /* Dark background */
+    }
+
+    #education h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    /* Education Grid */
+    .education_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* Education Card */
+    .education_card {
+        background: #111;
+        padding: 20px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: background 0.3s, transform 0.2s;
+        cursor: pointer;
+    }
+
+    .education_card:hover {
+        background: #222;
+        transform: scale(1.02);
+    }
+
+    .education_card img {
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+        flex-shrink: 0;
+    }
+
+    /* Education Text */
+    .education_info {
+        text-align: left;
+    }
+
+    .education_info h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .education_info p {
+        font-size: 1rem;
+        color: #A8A8A8;
+        margin: 5px 0;
+    }
+
+    /* Award List */
+    .education_info ul {
+        list-style: none;
+        padding: 0;
+        margin: 5px 0 0;
+    }
+
+    .education_info ul li {
+        font-size: 0.9rem;
+        color: #A8A8A8;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .education_grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+        /* ============ CONTACT SECTION ============ */
+    #contact {
+        text-align: center;
+        padding: 80px 10%;
+        color: #fff;
+        background: #000; /* Dark background */
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    #contact p {
+        font-size: 1.2rem;
+        color: #A8A8A8;
+        margin-bottom: 40px;
+    }
+
+    /* Contact Grid */
+    .contact_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* Contact Card */
+    .contact_card {
+        background: #111;
+        padding: 20px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        transition: background 0.3s, transform 0.2s;
+        cursor: pointer;
+    }
+
+    .contact_card:hover {
+        background: #222;
+        transform: scale(1.02);
+    }
+
+    /* Contact Icon */
+    .contact_card img {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    /* Contact Info */
+    .contact_info {
+        text-align: left;
+    }
+
+    .contact_info h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .contact_info p,
+    .contact_info a {
+        font-size: 1rem;
+        color: #A8A8A8;
+        margin: 5px 0;
+        text-decoration: none;
+    }
+
+    .contact_info a:hover {
+        color: #fff;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .contact_grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
